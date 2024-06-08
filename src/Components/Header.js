@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 const Header = () => {
-  const user = true;
+  const user = false;
   const username = "Shivansh Gupta";
   const [showSidebar, setShowSidebar] = useState();
   const [searchValue, setSearchValue] = useState();
@@ -64,7 +64,7 @@ const Header = () => {
                     <div className="flex justify-center items-center gap-4 text-black">
                       <Link
                         className="flex cursor-pointer justify-center items-center gap-2 text-sm text-black font-semibold"
-                        to="/login"
+                        to="/customerlogin"
                       >
                         <span>
                           <FaUser />
@@ -73,7 +73,7 @@ const Header = () => {
                       </Link>
                       <Link
                         className="flex cursor-pointer justify-center items-center gap-2 text-sm text-black font-semibold"
-                        to="/register"
+                        to="/customerregister"
                       >
                         <span>
                           <FaUserPlus />
