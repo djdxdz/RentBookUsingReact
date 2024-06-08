@@ -1,3 +1,37 @@
+# RentBook Start
+
+# Create react App
+npx create-react-app rentbook
+
+# Below Dependency are added as per required 
+npm install @reduxjs/toolkit react-redux axios react-hot-toast react-icons react-multi-carousel react-router-dom react-spinners socket.io-client
+
+# Command to instll Tailwind css
+npm install -D tailwindcss
+
+# Command to initialize Tailwind css
+npx tailwindcss init
+
+#Copy the below Snippet in tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+# Copy the below Snippet in ./src/index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+# rentBook End
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
